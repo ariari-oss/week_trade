@@ -8,10 +8,10 @@ name: week_trade
 # 実はgithub actionsのcronの時刻はUTCなので、日本時間に合わせるために日本時刻から9時間マイナスで設定する必要があります。
 
 on:
-  push:
+  #push:
   
-  #schedule:
-    #- cron: '0 22 * * *'
+  schedule:
+    - cron: '0 22 * * *'
 
 jobs:
   build:
